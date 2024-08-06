@@ -4,13 +4,12 @@
 # Important
 ### To make this work properly, we first need to download VirtualBox, and then use it to install Ubuntu 20.04 ..
 ## First download [VirtualBox](https://www.virtualbox.org/wiki/Downloads) 
-### After login into the website choose according to your system it will start downloading immediately  .
-        
+### After login into the website choose according to your system it will start downloading immediately  .      
 ![Screenshot at 2024-07-29 17-06-03](https://github.com/user-attachments/assets/f5ef7b8d-886d-427b-a133-4843ceb23369)
 
 ### "If you face a problem like this while trying to run VirtualBox, it might be because you don't have the Microsoft Visual C++ Redistributable installed on your device."
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1cdc0def-821e-46b5-9982-935b05374584" alt="Description of the image" width="600" height="400">
+  <img src="https://github.com/user-attachments/assets/1cdc0def-821e-46b5-9982-935b05374584" alt="Description of the image" width="500" height="300">
 </p>
 
 ###  Download [Latest Microsoft Visual C++ Redistributable Version](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) . see your computer requirements .And try the following steps :
@@ -84,6 +83,7 @@
   <img src="https://github.com/user-attachments/assets/e9413667-eac1-49d1-b8ec-673781405b3c" alt="First Image">
 </p>
 
+  
 ### Press "Install"; of course, we don't want to try it.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/317f2d8f-a1f6-4428-898a-4dd272942528" alt="First Image">
@@ -100,8 +100,21 @@
   <img src="https://github.com/user-attachments/assets/04dfceae-8a45-40ce-a2e2-9ba91f6c571e" alt="First Image">
 </p>
 
+### This is the interface of Ubuntu MATE.:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dc4c64f4-21fb-4635-9b17-3e8542383b28" alt="First Image">
+</p>
 
+### If you want to change the size of the screen, do the following :
+### First go to system settings 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a74c4896-bb16-440d-8511-88e94a427dad" alt="First Image">
+</p>
 
+### Then, go to Display settings and adjust the resolution until you find the right measurements for your screen.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/50b0b903-2274-4095-bacb-5763f354d188" alt="First Image">
+</p>
 
 
 
