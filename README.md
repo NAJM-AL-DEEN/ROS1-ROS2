@@ -9,7 +9,7 @@
 
 ### "If you face a problem like this while trying to run VirtualBox, it might be because you don't have the Microsoft Visual C++ Redistributable installed on your device."
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1cdc0def-821e-46b5-9982-935b05374584" alt="Description of the image" width="500" height="300">
+  <img src="https://github.com/user-attachments/assets/1cdc0def-821e-46b5-9982-935b05374584" alt="Description of the image" width="400" height="250">
 </p>
 
 ###  Download [Latest Microsoft Visual C++ Redistributable Version](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) . see your computer requirements .And try the following steps :
@@ -36,6 +36,9 @@
 ## Second [Ubuntu 20.04 LTS ](https://releases.ubuntu.com/20.04/) OR [Ubuntu mate 20.04 ](https://releases.ubuntu-mate.org/20.04/amd64/)
 ### The difference between LTS and MATE is that MATE has lighter system requirements, which can be beneficial.  
 ### Therefore, MATE is recommended.
+### See system requirements
+![Screenshot 2024-08-06 at 17-29-01 System Requirements Ubuntu MATE](https://github.com/user-attachments/assets/0e01b7ce-0a16-4f06-995e-ff5784266ff0)
+
 
 ## Now, let's set up Ubuntu inside VirtualBox. Here's a step-by-step guide :
 <p align="center">
@@ -115,6 +118,5 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/50b0b903-2274-4095-bacb-5763f354d188" alt="First Image">
 </p>
-
 
 
