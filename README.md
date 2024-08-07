@@ -1,4 +1,4 @@
-# ROS1-ROS2
+# ROS1 & ROS2
 ## How to Install ROS notic & ROS2 foxy .
 
 # Important
