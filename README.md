@@ -139,7 +139,8 @@ First, make sure your Debian package index is up-to-date:
   
   Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages 
   
-    ```sudo apt install ros-noetic-desktop-full```
+```sudo apt install ros-noetic-desktop-full```
+
 ## 1.5 Environment setup
 You must source this script in every bash terminal you use ROS in. 
 
