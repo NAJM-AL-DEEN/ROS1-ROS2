@@ -119,4 +119,103 @@
   <img src="https://github.com/user-attachments/assets/50b0b903-2274-4095-bacb-5763f354d188" alt="First Image">
 </p>
 
+# After setting up VirtualBox and Ubuntu 20.04, let's proceed to install [ROS Noetic](http://wiki.ros.org/ROS/Installation).
+![12](https://github.com/user-attachments/assets/208bb405-1887-43e4-a613-36e76a86c4f1)
+![12](https://github.com/user-attachments/assets/857864bc-89b0-44e2-8147-98e19908dd5c)
+# Installation Of ROS notic
+## 1.1 Setup your sources.list
+Setup your computer to accept software from packages.ros.org. 
+
+```sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'```
+## 1.2 Set up your keys
+```
+sudo apt install curl # if you haven't already installed curl
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+```
+## 1.3 Installation
+First, make sure your Debian package index is up-to-date: 
+
+  ```sudo apt update```
+  
+  Desktop-Full Install: (Recommended) : Everything in Desktop plus 2D/3D simulators and 2D/3D perception packages 
+  
+    ```sudo apt install ros-noetic-desktop-full```
+## 1.5 Environment setup
+You must source this script in every bash terminal you use ROS in. 
+
+```source /opt/ros/noetic/setup.bash```
+
+## 1.6 Dependencies for building packages
+To create and manage your own ROS workspaces, there are various tools and requirements that are distributed separately. 
+
+```sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential```
+
+### 1.6.1 Initialize rosdep
+rosdep enables you to easily install system dependencies for source you want to compile and is required to run some core components in ROS.
+
+```sudo apt install python3-rosdep```
+
+With the following, you can initialize rosdep. 
+```
+sudo rosdep init
+rosdep update
+```
+#### To verify that our installation is correct, type 
+
+```roscore```
+#### It should appear as follows:
+![12q](https://github.com/user-attachments/assets/201aabbc-e212-4085-9491-a2890c796a2a)
+
+# Now let's install [ROS2 foxy](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
+### 1. Set locale
+Make sure you have a locale which supports UTF-8. If you are in a minimal environment (such as a docker container), the locale may be something minimal like POSIX. We test with the following settings.
+```
+locale  # check for UTF-8
+
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+locale  # verify settings
+```
+### 2. Setup Sources
+You will need to add the ROS 2 apt repository to your system.
+```
+sudo apt install software-properties-common
+sudo add-apt-repository universe
+```
+Now add the ROS 2 GPG key with apt.
+```
+sudo apt update && sudo apt install curl -y
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+```
+Then add the repository to your sources list.
+```
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+```
+### 3.Install ROS 2 packages
+Update your apt repository caches after setting up the repositories.
+
+```sudo apt update```
+
+ROS 2 packages are built on frequently updated Ubuntu systems. It is always recommended that you ensure your system is up to date before installing new packages.
+
+```sudo apt upgrade```
+
+Desktop Install (Recommended): ROS, RViz, demos, tutorials.
+
+```sudo apt install ros-foxy-desktop python3-argcomplete```
+
+ROS-Base Install (Bare Bones): Communication libraries, message packages, command line tools. No GUI tools.
+
+```sudo apt install ros-foxy-ros-base python3-argcomplete```
+
+Development tools: Compilers and other tools to build ROS packages
+
+```sudo apt install ros-dev-tools```
+
+
+
+
 
